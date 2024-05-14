@@ -1,0 +1,184 @@
+@font-face{
+    font-family: "Lucky Bones";
+    src: url("Luckybones_1000FPU/Luckybones-Bold.ttf");
+}
+@font-face {
+    font-family: "Mont ExtraLight";
+    src: url("Mont/Mont-ExtraLightDEMO.otf");
+}
+
+@font-face {
+    font-family: "Mont Heavy";
+    src: url("Mont/Mont-HeavyDEMO.otf");
+}
+
+*{
+    background-color: #ECE6C2;
+}
+.products {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-top: 30px;
+
+}
+
+.products div{
+    background-color: white;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.products div:hover{
+    background:black;
+    transform: translateY(-10px);
+
+    h2{
+       color: white;
+       background: black; 
+    }
+
+    p{
+        color: white;
+        background: black;   
+    }
+    
+    span{
+        background-color: black;
+        color: white;
+    }
+
+    .btnBuy{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .btnAdd {
+        color: white;
+        background-color: black;
+        border: white solid;
+        border-width: 2px;
+        cursor: pointer;
+    }
+}
+
+.pictures {
+    flex-basis: 35%;
+    width: 100%;
+    border-radius: 10px;
+    border: solid black;
+}
+
+.products h2 {
+    font-family: "Lucky Bones";
+    color: black;
+    background-color: white;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.products p {
+    font-family: "Mont ExtraLight";
+    color: Black;
+    background-color: white;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.products span {
+    font-family: "Mont Heavy";
+    background-color: white;
+    color: black;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.btnBuy {
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.btnAdd{
+    width: 100%;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    padding: 2px;
+}
+
+.popup-container {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 10%;
+     /* Add padding on both sides */
+}
+
+.row {
+    border: black solid;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    max-width: 100%; /* Ensure content doesn't exceed container width */
+}
+
+.popup-picture {
+    width: 100%; /* Occupy full width of its container */
+    max-width: 300px; /* Example maximum width for the image */
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.product-col-1,
+.product-col-2 {
+    flex: 1; /* Equal width for both columns */
+    max-width: 50%; /* Ensure columns don't exceed 50% of the row width */
+    margin-right: 20px; /* Add margin between columns */
+}
+
+.product-col-2 {
+    margin-right: 10px; /* Remove right margin for the last column */
+    margin-left: 30px;
+    h2{
+        margin-right: -10px;
+        margin-left: -30px;
+        margin-bottom: -0px;
+        font-family: "Lucky Bones";
+        font-size: 35px;
+    }
+
+    span{
+        font-family: "Lucky Bones";
+    }
+
+    p{
+        font-family: "Mont ExtraLight";
+        font-size: 12px;
+    }
+}
+
+.btnpopBuy {
+    margin-top: 144px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    background: black;
+}

@@ -1,0 +1,193 @@
+@font-face{
+    font-family: "Inter";
+    src: url("static/Inter-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Bungee Shade";
+    src: url("Bungee_Shade/BungeeShade-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6F5F2;
+    color: #fff;
+}
+
+#homepage {
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    background-image: url("images/MARIA.png");
+    background-size: 99.9%;
+    animation: pageFade linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+@keyframes pageFade {
+    0% { opacity: 1; }
+    85%, 100% { opacity: 0;}
+}
+
+/*navigation bar*/
+.container{
+    padding: 10px 100px 10px 100px;
+    background-color: #FFECB3;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 12%;
+}
+
+.icons{
+    display: flex;
+    width: 2%;
+}
+
+nav ul{
+    padding-right: 30vh;
+    padding-left: 30vh;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    font-family: "Inter";
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*homepage*/
+.promos{
+    width: 100%;
+    
+}
+
+.row{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.col-one{
+    flex-basis:  35%;
+    padding-left:1%;
+    padding-right:4%;
+    padding-top:1%;
+    padding-bottom:1%;
+    margin-left: -65%;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.col-one {
+    padding-bottom: 260px;
+    background-color: rgba(255,236,179,0.5);
+    div{
+        margin-top: -150px;
+    }
+
+    p {
+        font-family: "Bungee Shade";
+        font-size: 90px;
+        color: black;
+        margin: 200px 10px 0px 300px;
+        }
+    
+    span{
+    font-family: "Bungee Shade";
+    font-size: 90px;
+    color: black;
+    margin-left: 250px;
+    }
+}
+
+.btnBuyNow{
+    width:30%;
+    background-color: rgba(255,255,255, 0.1);
+    margin-top: 13%;
+    margin-left: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: black solid;
+    border-radius: 10px;
+    font-family: "Inter";
+}
+
+/*best sellers*/
+.row-bs {
+    display: flex;
+    margin-top: -10px;
+    margin-left: -100px;
+    margin-right: -100px;
+    justify-content: space-between;
+    
+    .bs-col-1{
+        border-left: solid black;
+        border-top: solid black;
+        border-bottom: solid black;
+    }
+
+    .bs-col-2{
+        border-left: solid black;
+        border-top: solid black;
+        border-bottom: solid black;
+    }
+
+    .bs-col-3{
+        border-left: solid black;
+        border-top: solid black;
+        border-bottom: solid black;
+    }
+
+    .bs-col-4{
+        border-left: solid black;
+        border-top: solid black;
+        border-bottom: solid black;
+    }
+}
+
+.bsProducts{
+    width: 100%;
+}
+
+.names{
+    background-color: rgba(255,255,255, 0.1);
+    margin-top:-70px;
+    padding-bottom: 60px;
+}
